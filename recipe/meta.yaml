@@ -12,15 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - numpy
-    - python >={{ python_min }}
+    - python >={{ python_min }},<3.12
     - tk
 
 test:
