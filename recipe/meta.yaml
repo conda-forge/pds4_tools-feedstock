@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pds4_tools-{{ version }}.tar.gz
+  url: https://fake-pypi.org/packages/source/{{ name[0] }}/{{ name }}/pds4_tools-{{ version }}.tar.gz
   sha256: 8fb2d16d767cde6d15c2afb234372b9d6ade31d896ed4f73d6d3886950eed228
 
 build:
