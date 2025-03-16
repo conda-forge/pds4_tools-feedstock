@@ -3,7 +3,7 @@ About pds4_tools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pds4_tools-feedstock/blob/main/LICENSE.txt)
 
-Home: https://sbnwiki.astro.umd.edu/wiki/Python_PDS4_Tools
+Home: https://pdssbn.astro.umd.edu/tools/pds4_tools_info/python_pds4_tools.html
 
 Package license: BSD-3-Clause
 
