@@ -1,18 +1,18 @@
 {% set name = "pds4_tools" %}
-{% set version = "1.3" %}
+{% set version = "1.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pds4_tools-{{ version }}.zip
-  sha256: 8e6fdd0a9c4063c9a337b6ed3c52686da4f96bfba2a30e42ec57a6cf25fff459
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pds4_tools-{{ version }}.tar.gz
+  sha256: 8fb2d16d767cde6d15c2afb234372b9d6ade31d896ed4f73d6d3886950eed228
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - python {{ python_min }}
   run:
     - numpy
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }}
     - tk
 
 test:
@@ -35,7 +35,7 @@ test:
     - pip check
 
 about:
-  home: https://sbnwiki.astro.umd.edu/wiki/Python_PDS4_Tools
+  home: https://pdssbn.astro.umd.edu/tools/pds4_tools_info/python_pds4_tools.html
   summary: Package to read and display NASA PDS4 data
   description: |
     PDS4 Tools is a package intended to allow easy read-in of NASA PDS4 data
